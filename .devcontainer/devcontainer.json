@@ -1,13 +1,8 @@
 {
   "name": "Entorno de Clase",
-  "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
-  
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
   "customizations": {
     "vscode": {
-      "settings": {
-        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
-        "editor.formatOnSave": true
-      },
       "extensions": [
         "ms-python.python",
         "ms-toolsai.jupyter",
@@ -15,6 +10,5 @@
       ]
     }
   },
-
   "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && ~/.local/bin/uv sync"
 }
